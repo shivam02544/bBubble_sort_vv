@@ -14,14 +14,29 @@
     <div class="container">
       <h1 class="title">Sorting Visualizer</h1>
       <p class="description">
-        Watch how bubble sort algorithm works in real-time!
+        Watch different sorting algorithms in real-time!
       </p>
       <div class="controls">
         <button class="btn generate" onclick="generateArray()">
           <span>🔄 Generate New Array</span>
         </button>
-        <button class="btn sort" onclick="bubblesort()">
-          <span>▶️ Start Bubble Sort</span>
+        <button class="btn sort" onclick="bubbleSort()">
+          <span>Bubble Sort</span>
+        </button>
+        <button class="btn sort" onclick="selectionSort()">
+          <span>Selection Sort</span>
+        </button>
+        <button class="btn sort" onclick="insertionSort()">
+          <span>Insertion Sort</span>
+        </button>
+        <button class="btn sort" onclick="quickSort()">
+          <span>Quick Sort</span>
+        </button>
+        <button class="btn sort" onclick="mergeSort()">
+          <span>Merge Sort</span>
+        </button>
+        <button class="btn sort" onclick="heapSort()">
+          <span>Heap Sort</span>
         </button>
       </div>
       <div id="arr-container" class="array-container"></div>
