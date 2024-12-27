@@ -67,7 +67,7 @@ async function swapAnimation(firstBar, secondBar) {
         secondBar.style.boxShadow = "0 2px 4px rgba(0,0,0,0.2)";
         resolve();
       }, 50);
-    }, 300);
+    }, 400);
   });
 }
 
@@ -82,7 +82,7 @@ async function sortedBarsColored() {
 
     setTimeout(() => {
       bars[i].style.transform = "scaleY(1)";
-    }, 150);
+    }, 180);
   }
 }
 
