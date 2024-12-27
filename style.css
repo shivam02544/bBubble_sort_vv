@@ -9,6 +9,24 @@ body {
 
 .container {
   text-align: center;
+  animation: fadeIn 0.5s ease-in;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  min-width: 80%;
+  max-width: 1200px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1; 
+    transform: translateY(0);
+  }
 }
 
 #arr-container {
@@ -16,4 +34,43 @@ body {
   align-items: flex-end;
   justify-content: center;
   margin: 20px 0;
+}
+
+#arr-container div {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  background: linear-gradient(to top, #4481eb, #04befe);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transform-origin: bottom;
+  position: relative;
+}
+
+#arr-container div:hover {
+  transform: scaleY(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
 }

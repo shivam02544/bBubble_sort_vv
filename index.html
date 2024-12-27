@@ -3,15 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sorting Visualizer</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <h1>Display Sorting</h1>
-      <div id="arr-container"></div>
-      <button onclick="generateArray()">Generate Array</button>
-      <button onclick="bubblesort()">Bubblesort</button>
+      <h1 class="title">Sorting Visualizer</h1>
+      <p class="description">
+        Watch how bubble sort algorithm works in real-time!
+      </p>
+      <div class="controls">
+        <button class="btn generate" onclick="generateArray()">
+          <span>🔄 Generate New Array</span>
+        </button>
+        <button class="btn sort" onclick="bubblesort()">
+          <span>▶️ Start Bubble Sort</span>
+        </button>
+      </div>
+      <div id="arr-container" class="array-container"></div>
     </div>
     <script src="script.js"></script>
   </body>
